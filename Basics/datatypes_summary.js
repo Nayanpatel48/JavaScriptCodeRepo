@@ -8,9 +8,14 @@
 
 const score = 89
 const score1 = 78.0
+console.log(typeof score)
+console.log(typeof score1)
 //both comes in NUmber category
 
+let name = "Nayan"
+console.log(typeof name)
 const isLLoggedIn = false
+console.log(typeof isLLoggedIn)
 //Boolean
 const value = null
 //null 
@@ -51,3 +56,24 @@ console.log(typeof fnctn)
 console.log(typeof myObject)
 console.log(typeof heros)
 console.log(typeof id)
+console.log(typeof hi)
+
+//Assignment
+//Summary of data type and their return type:
+//In this code => console.log(x)
+// when x is below:
+//89,78.0 => number
+//const isLLoggedIn = false => boolean
+//const value = null => Object
+//const id2 = Symbol('123') => Symbol
+//let hi => undefined
+//const bigNumber = 23723894838999827498n =>bigint
+//const heros = ["Spidy", "Iron man","Wolverine"] => object
+//let myObject = {
+//    name : "Nayan",
+//    age: 20
+//} =>object
+//const fnctn = function(){
+//    console.log("Hello World")
+//} => function
+//let name = "Nayan" => String
