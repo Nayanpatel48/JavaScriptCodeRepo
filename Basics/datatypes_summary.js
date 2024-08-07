@@ -77,3 +77,34 @@ console.log(typeof hi)
 //    console.log("Hello World")
 //} => function
 //let name = "Nayan" => String
+
+//=====================================================
+
+//stack = primitive type values are store => whenever we take value it will give copy
+//Heap (non primitive value) => get original value 
+
+let myYouTubeName = "NayanChannel"
+
+let anotherName = myYouTubeName
+
+//anotherName is a copy of myYouTubeName
+console.log(anotherName)
+
+anotherName = "PatelNayan"
+
+console.log(myYouTubeName)
+console.log(anotherName)
+
+//from heap when we take value it will return refrence of original value value
+let user1 = {
+    email : "User@gmail.com",
+    upi :"hjk@gh"
+}
+
+let user2 = user1
+
+//using . we can access object value
+user2.email = "jjj@89"
+console.log(user1.email)
+console.log(user2.email)
+
