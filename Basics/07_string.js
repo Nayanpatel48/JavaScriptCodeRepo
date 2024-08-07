@@ -52,4 +52,3 @@ console.log(typeof str2)//string
 
 //both str1 and str2 are different type 
 
-
