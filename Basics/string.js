@@ -42,3 +42,14 @@ const name1 = new String(`na-yan-pat-el`)
 console.log(name1.split('-'))
 //splited based on -
 
+//String methods
+
+const str1 = new String('Hello')
+const str2 = String('Hello')
+
+console.log(typeof str1)//object
+console.log(typeof str2)//string
+
+//both str1 and str2 are different type 
+
+
