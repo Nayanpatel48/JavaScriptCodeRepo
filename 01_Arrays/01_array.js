@@ -62,3 +62,5 @@ console.log("after using splice original array: "+arr4)
 
 
 
+
+
