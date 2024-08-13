@@ -95,7 +95,3 @@ console.log(instructor)
 //     "nameOfInstructor" : "hitesh",
 //     "prize" : "999"
 // }
-
-
-
-
