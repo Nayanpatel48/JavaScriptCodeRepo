@@ -73,3 +73,29 @@ console.log(tinderUser1.hasOwnProperty('name'))//true
 //if property exists in tinderUser1 it returns true 
 console.log(tinderUser1.hasOwnProperty('address'))//false
 //if property doesn't exists in tinderUser1 it returns true
+
+/////////////////////////////destructuring///////////////////////////////////
+
+const course = {
+    couseName : "js in hindi",
+    prize : "999",
+    courseInstructor : "Hitsh"
+}
+
+//descturing value 
+//changing name of value
+const {courseInstructor : instructor} = course
+//console.log(courseInstructor)
+console.log(instructor)
+
+
+//json typical structure just for brief understanding
+// {
+//     "course" : "js in hindi",
+//     "nameOfInstructor" : "hitesh",
+//     "prize" : "999"
+// }
+
+
+
+
