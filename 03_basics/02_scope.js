@@ -1,21 +1,21 @@
-// var c = 300
-// let a = 300
+var c = 300
+let a = 300
 
-// if(true)
-// {
-//     //all things inside are block scope    
-//     let a=10
-//     const b=20
-//     //var c=30 avoid var
-//     c=30
-//     console.log(a)//30
-// }
-// //all out side is global scope
-// //console.log(a) not printed
-// //console.log(b) not printed
-// console.log(c) //30
+if(true)
+{
+    //all things inside are block scope    
+    let a=10
+    const b=20
+    //var c=30 avoid var
+    c=30
+    console.log(a)//30
+}
+//all out side is global scope
+//console.log(a) not printed
+//console.log(b) not printed
+console.log(c) //30
 
-// console.log(a)//300
+console.log(a)//300
 
 //////////////////////////////////////nested scope////////////////////////////////////////////////
 
