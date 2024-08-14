@@ -64,8 +64,3 @@ console.log(objectReturn(2,3))//{ username : 'Nayan'}
 
 const myArray = [1,2,3,4,5]
 //console.log(myArray.forEach(() => {}))//undefined
-
-
-
-
-
