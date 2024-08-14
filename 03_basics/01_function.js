@@ -104,9 +104,4 @@
 //     return getArray[1]
 // }
 // //console.log(`${returnSecondValueFromArray(myArray)} is second value`)
-// console.log(returnSecondValueFromArray([12,4,6,88]))
-
-
-
-
-
+// console.log(returnSecondValueFromArray([12,4,6,88])
