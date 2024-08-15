@@ -63,3 +63,14 @@ addOne(5)
 const addTwo = function(num){return num+2}
 //expression
 addTwo(5)
+
+// let num1 = 2
+// let num2 = 4
+
+// function addTwoNum(val1, val2)
+// {
+//     let total = val1+val2
+//     return total
+// }
+// let result1 = addTwoNum(num1, num2)
+// let result2 = addTwoNum(2,4)
