@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | Chai aur code</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>
+            javaScript
+        </li>
+    </ul>
+</body>
+<script>
+    function addLang(langName)
+    {
+        const li= document.createElement('li')
+        //approach 1
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('python')
+    addLang('typeScript')
+    addLang('Java')
+
+    function addOptLang(langName)
+    {
+        const li= document.createElement('li')
+        //approach 2
+        li.append(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    //more optimized approach
+    //always use 'append child' instead of innerHTML
+    addOptLang('Golang')
+
+    ///////////Edit Values////////////////////
+
+    const seconfLang = document.querySelector("li:nth-child(2)")
+    const newLi=document.createElement('li')
+    newLi.textContent="Mojo"
+    seconfLang.replaceWith(newLi)
+
+    //remove
+    const lastChild=document.querySelector('li:last-child')
+    lastChild.remove()
+    
+</script>
+</html>
