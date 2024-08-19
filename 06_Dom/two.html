@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+    <style>
+        .one{
+            background-color: black;
+        }
+        .day{
+            color: white;
+        }
+    </style>
+</head>
+<body class="one">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    //selecting parent
+    const parentValue = document.querySelector('.parent')
+    // console.log(parentValue)
+    // console.log(parentValue.children)
+    // console.log(parentValue.children[1])
+    // console.log(parentValue.children[1].innerHTML)
+
+    // for(let i=0;i<parentValue.children.length;i++){
+    //     console.log(parentValue.children[i])
+    // }
+
+    //making Tuesaday background orange colored
+    parentValue.children[1].style.backgroundColor='orange'
+
+    //console.log(parentValue.firstElementChild)
+    //monday
+    //console.log(parentValue.lastElementChild)
+    //thursday
+
+    //in this query selector the entire tree is traversed
+    //so it is very expensive task
+    const day1 = document.querySelector('.day')
+    console.log(day1)
+    //Monday
+
+    //console.log(day1.parentElement)
+    //console.log(day1.nextElementSibling)
+
+    //console.log("NODES: ", parentValue.childNodes)
+
+    
+
+</script>
+</html>
