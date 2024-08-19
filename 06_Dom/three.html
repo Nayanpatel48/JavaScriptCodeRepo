@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+    <style>
+        .one{
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="one">
+    
+</body>
+    <script>
+        //creating element
+        const myElement=document.createElement('h1')
+        console.log(myElement)
+
+        //setting class name and id
+        myElement.id=Math.round(Math.random()*10)+1
+        myElement.className="One"
+
+        myElement.setAttribute('title','generatedTitle')
+        //here values are changed directly without 
+        //fetching it (more effective)
+        myElement.style.backgroundColor='green'
+        //in this type of dot operation first the values
+        //are fatched and the the values are changed
+        //(less effective)
+
+        myElement.style.padding='12px'
+
+        const addText = document.createTextNode("Chai aur code")
+        myElement.appendChild(addText)
+
+        document.body.appendChild(myElement)
+        //displays text
+    </script>
+</html>
