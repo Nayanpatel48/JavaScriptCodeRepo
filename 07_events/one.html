@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .google{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <div>
+            <ul id = "images">
+                <li>
+                    <img id="one" width="200px" height="200px" src="./pexels-8moments-1323550.jpg" alt="">
+                </li>
+                <li>
+                    <img id="two" width="200px" height="200px" src="./pexels-jill-wellington-1638660-39853.jpg" alt="">
+                </li>
+                <li>
+                    <img id="three" width="200px" height="200px" src="./pexels-njeromin-17401854.jpg" alt="">
+                </li>
+                <li>
+                    <img id="four" width="200px" height="200px" src="./pexels-njeromin-17475756.jpg" alt="">
+                </li>
+                <li>
+                    <img id="five" width="200px" height="200px" src="./pexels-njeromin-19400413.jpg" alt="">
+                </li>
+                <li>
+                    <img id="six" width="200px" height="200px" src="./pexels-sanaan-3075993.jpg" alt="">
+                </li>
+                <li><a id="google" href="https://www.google.com/">google</a></li>
+            </ul>
+        </div>
+    </h2>
+    <!-- here in javaScript all the instructions run sequencially but there are some things which are exceptions to it which are discussed in this lesson async programming. This events triggers on a perticular event such as mouse movement, button press etc.-->
+    <script>
+        // document.getElementById('two').onclick= function(){
+        //     alert("owl clicked")
+        // }
+
+        // event listner is more powerful tool
+        // document.getElementById('two').addEventListener('click', function(){
+        //     alert("Two clicked")
+        // }, false)
+        //often in interview this was asked that what is the third parameter of event listner and why it
+        //is ued
+
+        //attachEvent()
+        //jquery()
+
+        // document.getElementById('two').addEventListener('click', function(e){
+        //     console.log(e)
+        // }, false)
+        //false is used for event bubbling, true is used for event capturing
+
+        //Interview questions:Make a application in which when i click give me the time stamp of it?
+        //this type of questions are asked in interviews which are done using event listners.
+
+        //must study from mdn:type, timestamp, default prevented, target, toElement, source element
+        //current target, clientX, clientY, screenX, screenY, altKey, cltKey, shiftKey, KeyCode
+
+        // document.getElementById('two').addEventListener('click', function(e){
+        //     alert('clicked inside the ul')
+        // })
+        // document.getElementById('three').addEventListener('click', function(e){
+        //     alert('third element is clicked')
+        // })
+        //above is the example of bubbling where the inner most element is executed first
+
+        // document.getElementById('two').addEventListener('click', function(e){
+        //     console.log('clicked inside the ul')
+        // }, true)
+        // document.getElementById('three').addEventListener('click', function(e){
+        //     console.log('third element is clicked')
+        //     e.stopPropagation()
+        // }, true)
+        //above is the example of capturing it goes from top to bottom so bigger element is get executed
+        //first here we used third parameter as true
+
+        // document.getElementById('google').addEventListener('click',function(e){
+        //     e.preventDefault()
+        //     e.stopPropagation()
+        //     console.log("google clicked.")
+        // }, false)
+
+        ///////////////////////////target method in event listners///////////////////////////////////////
+        //This method gives us from where this event is occurring
+        // document.querySelector('#images').addEventListener('click',function(e){
+        //     console.log(e.target)
+        // }, false)
+
+        ///////////////////////////targeting parent node in event listners////////////////////////////////
+        // document.querySelector('#images').addEventListener('click',function(e){
+        //     console.log(e.target.parentNode)
+        // }, false)
+
+        ///////////////////////////targeting parent node in event listners & removing it//////////////////
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.parentNode)
+
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.id)
+                let removeIt = e.target.parentNode
+                removeIt.remove() //1st approach
+            }
+        }, false)
+    </script>
+</body>
+</html>
