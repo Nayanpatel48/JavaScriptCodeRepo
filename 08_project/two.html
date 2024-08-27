@@ -1,0 +1,45 @@
+/*Always do investigative study cause it is best*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chai aur javaScript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    //making start and stop timer
+    ////////setInterval()/////////////////////
+    const sayDate = function(str){
+        console.log(str, Date.now())
+    }
+
+    let intervalId=setInterval(sayDate, 1000, 'hi')
+
+    //start
+    document.querySelector('#start',).addEventListener('click', function(){
+        //this will be continues infinitely
+        console.log('STARTED')
+        intervalId= setInterval(sayDate, 1000, 'hi')
+    })
+    
+    //stop
+    document.querySelector('#stop',).addEventListener('click', function(){
+        clearInterval(intervalId)
+        console.log('STOPPED')
+    })
+</script>
+</html>

@@ -43,6 +43,7 @@
         document.querySelector('h1').innerHTML= "Best JS series"
     }
     const changeMe=setTimeout(changeText,3000)
+    
     document.querySelector('#stop').addEventListener('click',function(){
         clearTimeout(changeMe)
         console.log('STOPPED')
