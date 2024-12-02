@@ -1,25 +1,23 @@
 function dayOfProgrammer(year) {
-    let isLeapYear= (year % 100  % 4 == 0) ? true : false
-    let arr, sum, flag
-    sum=0
-    flag=256
+    let dayOfProgrammer = 256; // The 256th day of the year
+
+    if (year === 1918) {
+        // Transition year: February had only 14 days
+        return `26.09.${year}`;
+    }
+
+    let isLeapYear;
+    if (year < 1918) {
+        // Julian calendar leap year rule
+        isLeapYear = (year % 4 === 0);
+    } else {
+        // Gregorian calendar leap year rule
+        isLeapYear = (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0));
+    }
 
     if (isLeapYear) {
-        console.log("leap")
-        arr=[31,29,30,31,30,31,30,31,30,31,30,31]
+        return `12.09.${year}`; // 12th September for leap years
     } else {
-        arr=[31,28,30,31,30,31,30,31,30,31,30,31]
-    }
-
-    for(let i=0;i<arr.length;i++){
-        if(flag<=31){
-            if(i<=9){
-                return `${flag-1}.0${(i+1)}.${year}`
-            } else {
-                return `${flag-1}.${(i+1)}.${year}`
-            }
-        }
-        flag-=arr[i]
+        return `13.09.${year}`; // 13th September for non-leap years
     }
 }
-console.log(dayOfProgrammer(2100))
