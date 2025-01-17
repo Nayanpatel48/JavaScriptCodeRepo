@@ -1,16 +1,18 @@
 //there are two types of datatypes : primitive and non primitive datatypes
 
 //primitive types =>Call by value
-//7 types => String, boolean, null, Number, undefined, Symbol(used to make any value unique), Big int(very big values)
+//7 types => String, boolean, null, Number, undefined, Symbol(used to make any value unique), 
+// Big int(very big values)
 
-//we don't define language in javaScript
-//javaScript is a dynamically typed language means that the data type of the variable is determined during run time.
+//we don't define datatypes in javaScript
+//javaScript is a dynamically typed language means that the data type of the variable is 
+// determined during run time.
 
 const score = 89
 const score1 = 78.0
 console.log(typeof score)
 console.log(typeof score1)
-//both comes in NUmber category
+//both comes in Number category
 
 let name = "Nayan"
 console.log(typeof name)
@@ -24,7 +26,7 @@ let hi
 
 const id = Symbol('123')
 const id2 = Symbol('123')
-//return usnique symbol anytime
+//return unique symbol anytime
 console.log(id == id2)//false
 
 const bigNumber = 23723894838999827498n

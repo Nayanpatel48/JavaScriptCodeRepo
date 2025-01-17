@@ -4,7 +4,7 @@ var accountPassword = "12345"
 accountCity = "Jaipur" // not a good use
 let acoountType
 
-//acoountId = 2 // not allowed
+acoountId = 2 // not allowed
 
 console.log(accountId)
 

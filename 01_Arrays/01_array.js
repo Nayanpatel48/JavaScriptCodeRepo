@@ -46,7 +46,7 @@ arr4 = [1,2,34,5,6,7,7]
 console.log("original array:"+arr4)
 
 //slice
-const ar1 = arr4.slice(1,3)
+const ar1 = arr4.slice(1,4)
 
 console.log("after using slice: "+ar1)
 console.log("after using slice original array: "+arr4)

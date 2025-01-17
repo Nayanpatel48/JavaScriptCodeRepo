@@ -7,12 +7,15 @@ console.log(typeof(score))
 
 //"37NM" => Nan
 score = "37NM"
+
+//type conversion
 let valueInNUmber = Number(score)
+
 console.log(typeof valueInNUmber)
 
 console.log(valueInNUmber)
 
-//null =>object
+//null is a object type in javaScript
 score = null
 console.log(typeof score)
 
@@ -48,7 +51,7 @@ console.log(value)
 // console.log(2%2)
 
 let str1 = "Nayan"
-let str2 = "Patek"
+let str2 = "Patel"
 let str3 = str1+str2
 console.log(str3)
 
@@ -71,8 +74,8 @@ console.log(num3)
 
 //prefix and postfix
 let gameCounter = 0
-gameCounter++//first use and incremenet
-++gameCounter//first 
+gameCounter++//first use and increment
+++gameCounter//first increment then use
 console.log(gameCounter)//1
 
 
