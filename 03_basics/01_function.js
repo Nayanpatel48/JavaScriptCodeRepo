@@ -5,7 +5,7 @@
 // }
 //above is the syntax for function
 
-//just sayMyName alone is the reference of the function by running it nothing will happen
+//just `sayMyName` alone is the `reference of the function` by running it nothing will happen
 //if we want to execute it then sayMyName()
 //this will be useful in dom manipulation and react learning
 

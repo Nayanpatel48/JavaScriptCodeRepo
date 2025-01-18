@@ -28,7 +28,7 @@ function one()
         console.log(userName)
     }
     //console.log(website)
-    //website scope is over in two() cuntion
+    //website scope is over in two() execuntion
     two()//Nayan
 }
 
@@ -62,7 +62,7 @@ addOne(5)
 
 const addTwo = function(num){return num+2}
 //expression
-addTwo(5)
+console.log(addTwo(5))
 
 // let num1 = 2
 // let num2 = 4

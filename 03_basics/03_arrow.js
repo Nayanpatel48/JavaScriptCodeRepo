@@ -1,4 +1,14 @@
 //always do investigative study cause it is the best
+
+//why we need arrow function when we have normal function?
+//ans => Arrow functions provide a more concise syntax, making your code easier to read 
+//and write, especially for small, one-liner functions.
+
+//what is callbacks in javascript?
+//ans => A callback is a function that is passed as an argument to another function and 
+//is executed after some operation is completed. Callbacks are a key concept in JavaScript,
+//especially for handling asynchronous operations like API calls, timers, or event listeners.
+
 const user = {
     username: "Nayan",
     prize : 900,
@@ -23,7 +33,7 @@ function chai()
     console.log(this)
 }
 //when we print this inside node environment
-chai()
+chai()//undefined
 
 function chaiNumberTwo()
 {
@@ -56,7 +66,8 @@ console.log(addTwo2(4,5))//9
 
 
 // const objectReturn = (num1, num2) => (username : "Nayan")
-//without wraping username : "Nayan" into curly braces function can not return object it returns undefined
+// without wraping username : "Nayan" into curly braces function can not return object 
+// it returns undefined
 
 const objectReturn = (num1, num2) => ({username : "Nayan"})
 
