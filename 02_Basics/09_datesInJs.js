@@ -1,6 +1,8 @@
 //Dates
 
 let myDate = new Date()
+// we've initialized new date object in javaScript
+// it represents the date and time of the time when it is executed.
 console.log(myDate)
 
 console.log(myDate.getDate())//8

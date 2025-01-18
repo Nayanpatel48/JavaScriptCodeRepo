@@ -10,6 +10,7 @@ tinderUser1.id = "123abc"
 tinderUser1.age = "14"
 console.log(tinderUser1)
 
+//nested object
 const regularUser = {
     email : "some@gmail.com",
     fullName : {
@@ -26,7 +27,15 @@ const obj2 = {3:"c", 4:"d"}
 const obj4 = {5:"e", 6:"f"}
 //approach 1
 const obj3 = Object.assign(obj1, obj2)
+
+// Object.assign(obj1, obj2)
+// you can write also like this if you want to copy all values of obj2 into obj1.
+
 //here all values are going into obj1
+// The first argument (obj1) is the target object.
+// The subsequent arguments (obj2) are source objects whose properties are copied 
+// to the target object.
+
 console.log(obj3)
 console.log(obj1 == obj3)//true
 
@@ -87,7 +96,8 @@ const course = {
 const {courseInstructor : instructor} = course
 //console.log(courseInstructor)
 console.log(instructor)
-
+// Destructuring is a shorthand syntax in JavaScript for unpacking values 
+// from arrays or properties from objects into distinct variables.
 
 //json typical structure just for brief understanding
 // {

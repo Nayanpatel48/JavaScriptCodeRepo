@@ -22,7 +22,7 @@ console.log(jsUser.email)
 console.log(jsUser["email"])
 //behind the scene email is a string
 
-//but what if i want to access value "full name" teh dot operator will not be useful
+//but what if i want to access value "full name" the dot operator will not be useful
 console.log(jsUser["full name"])
 //here the [] comes into the picture
 
@@ -31,9 +31,11 @@ console.log(jsUser[mysy])//Symbol
 
 //changing object values
 jsUser.email = "nayan789@jus"
-//Object.freeze(jsUser)
+// Object.freeze(jsUser) //will not allow modifications on javaScript object
 jsUser.email = "nayan789@xyz"
 console.log(jsUser["email"])
+
+//jsUser[email] = "nayan789@xyz" gives error
 
 console.log(jsUser)
 //here in this output you can refer to symbol
@@ -44,6 +46,9 @@ jsUser.greeting = function(){
 jsUser.greetingTwo = function(){
     console.log(`Hello, ${this.name}`)
 }
+
+//This defines a function and assigns it to the greeting property of the jsUser object.
+
 //we have used string interpolation here using backtics (`) so that we can write 
 //${this.name}
 //refering object it self using 'this'
