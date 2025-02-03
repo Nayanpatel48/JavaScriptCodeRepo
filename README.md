@@ -2,14 +2,14 @@
 
 ## 01_Arrays:
 
-### - 01_array.js
+### 01_array.js
 - Arrays, accessing array elements, array creation
 - Insertion of elements, deletion of elements
 - Usage of `.shift()` and `.unshift()`
 - `.includes()`, `.join()`, `typeof`
 - Array slicing, array splice
 
-### - 02_array.js
+### 02_array.js
 - 2D arrays
 - Concatenating two arrays
 - Merging two arrays using spread syntax
@@ -18,49 +18,49 @@
 
 ## 02_Basics:
 
-### - 01_test.js
+### 01_test.js
 - Testing of printing statements
 
-### - 02_variable.js
+### 02_variable.js
 - `const`, `let`, `var`
 - Usage of `console.table()`
 
-### - 03_comparison.js
+### 03_comparison.js
 - Comparison operators: `>`, `<`, `<=`, `>=`
 - `===` strict equality operator, `==` loose equality operator
 
-### - 04_conversionOperations.js
+### 04_conversionOperations.js
 - Type conversion, type checking
 - String concatenation usage
 
-### - 05_dataTypes.js
+### 05_dataTypes.js
 - Basic data types such as `undefined`, `null`, `string`, `object`
 
-### - 06_datatypes_summary.js
+### 06_datatypes_summary.js
 - Big integer, Object, Function, Array
 - Access object values using the dot (`.`) notation
 
-### - 07_string.js
+### 07_string.js
 - String concatenation
 - String creation using the `new` keyword
 - `.indexOf()`, `.length`, `.toUpperCase()`, `.charAt()`, `.substring()`, `.trim()`, `.replace()`, `.includes()`, `.split()`
 
-### - 08_numbers_math.js
+### 08_numbers_math.js
 - Creation of `Number` object using the `new` keyword
 - Converting number to string type
 - `.toFixed()`, `.toPrecision()`, various `Number.` methods like `MAX_VALUE`, `MIN_VALUE`
 - `Math` in javaScript
 
-### - 09_datesInJs.js
+### 09_datesInJs.js
 - Date object creation & various useful methods of it.
 
-### - 10_object.js
+### 10_object.js
 - javaScript object creation, accessing object values using `.` & `[]` 
 - modifying values in object 
 - freezing javaScript object
 - assigning function to javaScript object
 
-### - 11_object.js
+### 11_object.js
 - singleton object creation
 - giving values to singleton object
 - nested object
@@ -95,4 +95,24 @@
 
 ## 04__control_flow:
 
-###
+### 
+
+## 05_iterations
+
+### one.js
+
+### two.js
+
+### three.js
+
+### four.js
+
+### five.js
+
+- learned `callbacks` ()=>{} very useful concept.
+
+### six.js
+
+### seven.js
+
+### eight.js
